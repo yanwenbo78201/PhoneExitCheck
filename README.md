@@ -1,6 +1,6 @@
 # PhoneExitCheck
 
-一个用于检查 Apple 设备型号退出信息的 macOS 应用程序。
+一个用于检查 Apple 设备型号退出信息的 macOS 应用程序，数据来源根据https://theapplewiki.com/wiki/Models 中获取的设备型号数据。
 
 ## 功能特性
 
