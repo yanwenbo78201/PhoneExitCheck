@@ -103,8 +103,10 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         tableView.gridStyleMask = [.solidHorizontalGridLineMask]
 
         let columns = [
-            ("Identifier", 150),
-            ("Generation", 300)
+            ("Identifier", 130),
+            ("Generation", 200),
+            ("Connectivity", 95),
+            ("Storage", 110)
         ]
 
         for (title, width) in columns {
@@ -442,7 +444,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     private func checkDeviceInfoInFiles(folderPath: String, identifiers: [String], generations: [String]) {
         let resourcePath = Bundle.main.resourcePath ?? ""
-        let pythonScriptPath = "\(resourcePath)/check_device_info.py"
+        let pythonScriptPath = "\(resourcePath)/check_device_info_browser.py"
         
         // 检查脚本文件是否存在
         guard FileManager.default.fileExists(atPath: pythonScriptPath) else {
@@ -518,6 +520,25 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         let foundGenerations = result["found_generations"] as? [String] ?? []
         let notFoundIdentifiers = result["not_found_identifiers"] as? [String] ?? []
         let notFoundGenerations = result["not_found_generations"] as? [String] ?? []
+        let modelsFetchOk = result["models_fetch_ok"] as? Bool ?? true
+        let modelsFetchError = result["models_fetch_error"] as? String ?? ""
+        let modelsPageCount = result["models_page_device_count"] as? Int ?? 0
+        let identifiersNotOnWiki = result["identifiers_not_on_models_page"] as? [String] ?? []
+
+        let wikiStatusLine: String = {
+            if !modelsFetchOk {
+                return "提示：在线 Models 页面未成功拉取或解析（\(modelsFetchError)）。下方对比仍使用应用内设备列表；请确认已安装 Playwright/Chromium，必要时在弹出浏览器中完成验证。\n\n"
+            }
+            if modelsPageCount > 0 {
+                var line = "已从 The Apple Wiki Models 页解析 \(modelsPageCount) 条设备表项。\n"
+                if !identifiersNotOnWiki.isEmpty {
+                    line += "以下 Identifier 未出现在当前维基表格中（可能应用数据较新或维基未收录）：\n"
+                    line += identifiersNotOnWiki.joined(separator: ", ") + "\n"
+                }
+                return line + "\n"
+            }
+            return ""
+        }()
         
         // 获取当前设备数据用于配对展示
         let identifiers = getFilteredIdentifiers()
@@ -545,10 +566,10 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         
         // 构建结果文本并显示在结果区域
         if notFoundPairs.isEmpty {
-            resultTextView.string = "所有设备信息都已在文件中找到！"
+            resultTextView.string = wikiStatusLine + "所有设备信息都已在文件中找到！"
             resultTextView.textColor = NSColor.green
         } else {
-            var resultText = ""
+            var resultText = wikiStatusLine
             for (identifier, generation) in notFoundPairs {
                 let note = !isDeviceSupportiOS15(identifier: identifier) ? " ⚠️不支持iOS 15+" : ""
                 resultText += "\(identifier) : \(generation)\(note)\n"
@@ -583,11 +604,14 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         }
         
         if allNotFound {
-            showAlert(title: "未找到匹配", message: "在文件夹 \(folderPath) 中未找到任何设备标识符或Generation信息。\(noteText)")
+            let wikiNote = modelsFetchOk ? "" : "\n\n\(modelsFetchError)"
+            showAlert(title: "未找到匹配", message: "在文件夹 \(folderPath) 中未找到任何设备标识符或Generation信息。\(noteText)\(wikiNote)")
         } else if !notFoundPairs.isEmpty {
-            showAlert(title: "检查完成", message: "部分设备信息未在文件中找到，请查看下方的详细列表。\(noteText)")
+            let wikiNote = modelsFetchOk ? "" : "\n\n在线 Models：\(modelsFetchError)"
+            showAlert(title: "检查完成", message: "部分设备信息未在文件中找到，请查看下方的详细列表。\(noteText)\(wikiNote)")
         } else {
-            showAlert(title: "检查完成", message: "所有设备信息都已在文件中找到！")
+            let wikiNote = modelsFetchOk ? "" : "\n\n在线 Models：\(modelsFetchError)"
+            showAlert(title: "检查完成", message: "所有设备信息都已在文件中找到！\(wikiNote)")
         }
     }
     
@@ -685,6 +709,10 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             value = identifier
         case "Generation":
             value = device.Generation ?? ""
+        case "Connectivity":
+            value = device.Connectivity ?? ""
+        case "Storage":
+            value = device.Storage ?? ""
         default:
             value = ""
         }

@@ -7,7 +7,6 @@
     "Internal Name": "Unknown",
     "Identifier": "AppleTV1,1",
     "Color": "Silver",
-    "Storage": "40 GB",
     "Model": "MA711"
   },
   "AppleTV2,1": {
@@ -18,7 +17,6 @@
     "Internal Name": "K66AP",
     "Identifier": "AppleTV2,1",
     "Color": "Black",
-    "Storage": "8 GB",
     "Model": "MC572"
   },
   "AppleTV3,1": {
@@ -29,7 +27,6 @@
     "Internal Name": "J33AP",
     "Identifier": "AppleTV3,1",
     "Color": "Black",
-    "Storage": "8 GB",
     "Model": "MD199"
   },
   "AppleTV3,2": {
@@ -40,7 +37,6 @@
     "Internal Name": "J33iAP",
     "Identifier": "AppleTV3,2",
     "Color": "Black",
-    "Storage": "8 GB",
     "Model": "MD199"
   },
   "AppleTV5,3": {
@@ -51,7 +47,6 @@
     "Internal Name": "J42dAP",
     "Identifier": "AppleTV5,3",
     "Color": "Black",
-    "Storage": "32 GB",
     "Model": "MGY52, ML4W2, MR912, MHY93"
   },
   "AppleTV6,2": {
@@ -62,7 +57,6 @@
     "Internal Name": "J105aAP",
     "Identifier": "AppleTV6,2",
     "Color": "Black",
-    "Storage": "32 GB",
     "Model": "MQD22"
   },
   "AppleTV11,1": {
@@ -73,7 +67,6 @@
     "Internal Name": "J305AP",
     "Identifier": "AppleTV11,1",
     "Color": "Black",
-    "Storage": "32 GB",
     "Model": "MXGY2"
   },
   "AppleTV14,1": {
@@ -84,7 +77,6 @@
     "Internal Name": "J255AP",
     "Identifier": "AppleTV14,1",
     "Color": "Black",
-    "Storage": "64 GB",
     "Model": "MN873"
   },
   "iPad1,1": {
@@ -95,7 +87,6 @@
     "Internal Name": "K48AP",
     "Identifier": "iPad1,1",
     "Finish": "Black",
-    "Storage": "16 GB",
     "Model": "MB292, MC642[1]"
   },
   "iPad2,1": {
@@ -106,8 +97,8 @@
     "Internal Name": "K93AP",
     "Identifier": "iPad2,1",
     "Finish": "Black",
-    "Storage": "16 GB",
-    "Model": "MC769"
+    "Model": "MC769",
+    "Connectivity": "Wi-Fi"
   },
   "iPad2,2": {
     "Generation": "iPad 2",
@@ -117,8 +108,8 @@
     "Internal Name": "K94AP",
     "Identifier": "iPad2,2",
     "Finish": "Black",
-    "Storage": "16 GB",
-    "Model": "MC773, MC957"
+    "Model": "MC773, MC957",
+    "Connectivity": "Cellular"
   },
   "iPad2,3": {
     "Generation": "iPad 2",
@@ -128,8 +119,8 @@
     "Internal Name": "K95AP",
     "Identifier": "iPad2,3",
     "Finish": "Black",
-    "Storage": "16 GB",
-    "Model": "MC755"
+    "Model": "MC755",
+    "Connectivity": "Cellular"
   },
   "iPad2,4": {
     "Generation": "iPad 2",
@@ -139,8 +130,8 @@
     "Internal Name": "K93aAP",
     "Identifier": "iPad2,4",
     "Finish": "Black",
-    "Storage": "16 GB",
-    "Model": "MC954, MC960, MC988"
+    "Model": "MC954, MC960, MC988",
+    "Connectivity": "Wi-Fi"
   },
   "iPad3,1": {
     "Generation": "iPad (3rd generation)",
@@ -150,8 +141,8 @@
     "Internal Name": "J1AP",
     "Identifier": "iPad3,1",
     "Finish": "Black",
-    "Storage": "16 GB",
-    "Model": "MC705, MD333"
+    "Model": "MC705, MD333",
+    "Connectivity": "Wi-Fi"
   },
   "iPad3,2": {
     "Generation": "iPad (3rd generation)",
@@ -161,8 +152,8 @@
     "Internal Name": "J2AP",
     "Identifier": "iPad3,2",
     "Finish": "Black",
-    "Storage": "16 GB",
-    "Model": "MC733"
+    "Model": "MC733",
+    "Connectivity": "Cellular"
   },
   "iPad3,3": {
     "Generation": "iPad (3rd generation)",
@@ -172,8 +163,8 @@
     "Internal Name": "J2aAP",
     "Identifier": "iPad3,3",
     "Finish": "Black",
-    "Storage": "16 GB",
-    "Model": "MD366, MD404"
+    "Model": "MD366, MD404",
+    "Connectivity": "Cellular"
   },
   "iPad3,4": {
     "Generation": "iPad (4th generation)",
@@ -183,8 +174,8 @@
     "Internal Name": "P101AP",
     "Identifier": "iPad3,4",
     "Finish": "Black",
-    "Storage": "16 GB",
-    "Model": "MD510, MD910[1]"
+    "Model": "MD510, MD910[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad3,5": {
     "Generation": "iPad (4th generation)",
@@ -194,8 +185,8 @@
     "Internal Name": "P102AP",
     "Identifier": "iPad3,5",
     "Finish": "Black",
-    "Storage": "16 GB",
-    "Model": "MD516, MG932"
+    "Model": "MD516, MG932",
+    "Connectivity": "Cellular"
   },
   "iPad3,6": {
     "Generation": "iPad (4th generation)",
@@ -205,8 +196,8 @@
     "Internal Name": "P103AP",
     "Identifier": "iPad3,6",
     "Finish": "Black",
-    "Storage": "16 GB",
-    "Model": "MD522, ME195"
+    "Model": "MD522, ME195",
+    "Connectivity": "Cellular"
   },
   "iPad6,11": {
     "Generation": "iPad (5th generation)",
@@ -216,8 +207,8 @@
     "Internal Name": "J71sAPJ71tAP",
     "Identifier": "iPad6,11",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "MPGT2"
+    "Model": "MPGT2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad6,12": {
     "Generation": "iPad (5th generation)",
@@ -227,8 +218,8 @@
     "Internal Name": "J72sAPJ72tAP",
     "Identifier": "iPad6,12",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "MPG42, MPGA2"
+    "Model": "MPG42, MPGA2",
+    "Connectivity": "Cellular"
   },
   "iPad7,5": {
     "Generation": "iPad (6th generation)",
@@ -238,8 +229,8 @@
     "Internal Name": "J71bAP",
     "Identifier": "iPad7,5",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "MRJN2"
+    "Model": "MRJN2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad7,6": {
     "Generation": "iPad (6th generation)",
@@ -249,8 +240,8 @@
     "Internal Name": "J72bAP",
     "Identifier": "iPad7,6",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "MRM52"
+    "Model": "MRM52",
+    "Connectivity": "Cellular"
   },
   "iPad7,11": {
     "Generation": "iPad (7th generation)",
@@ -260,8 +251,8 @@
     "Internal Name": "J171AP",
     "Identifier": "iPad7,11",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "MW762, 3F837[1]"
+    "Model": "MW762, 3F837[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad7,12": {
     "Generation": "iPad (7th generation)",
@@ -271,8 +262,8 @@
     "Internal Name": "J172AP",
     "Identifier": "iPad7,12",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "MW6D2, MW6R2, MW6Y2"
+    "Model": "MW6D2, MW6R2, MW6Y2",
+    "Connectivity": "Cellular"
   },
   "iPad11,6": {
     "Generation": "iPad (8th generation)",
@@ -282,8 +273,8 @@
     "Internal Name": "J171aAP",
     "Identifier": "iPad11,6",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "MYLC2, 3YLC2[1]"
+    "Model": "MYLC2, 3YLC2[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad11,7": {
     "Generation": "iPad (8th generation)",
@@ -293,8 +284,8 @@
     "Internal Name": "J172aAP",
     "Identifier": "iPad11,7",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "MYMK2, MYN62"
+    "Model": "MYMK2, MYN62",
+    "Connectivity": "Cellular"
   },
   "iPad12,1": {
     "Generation": "iPad (9th generation)",
@@ -304,8 +295,8 @@
     "Internal Name": "J181AP",
     "Identifier": "iPad12,1",
     "Finish": "Silver",
-    "Storage": "64 GB",
-    "Model": "MK2L3"
+    "Model": "MK2L3",
+    "Connectivity": "Wi-Fi"
   },
   "iPad12,2": {
     "Generation": "iPad (9th generation)",
@@ -315,8 +306,8 @@
     "Internal Name": "J182AP",
     "Identifier": "iPad12,2",
     "Finish": "Silver",
-    "Storage": "64 GB",
-    "Model": "MK493, MK673"
+    "Model": "MK493, MK673",
+    "Connectivity": "Cellular"
   },
   "iPad13,18": {
     "Generation": "iPad (10th generation)",
@@ -326,8 +317,8 @@
     "Internal Name": "J271AP",
     "Identifier": "iPad13,18",
     "Finish": "Silver",
-    "Storage": "64 GB",
-    "Model": "MPQ03, MCM74, 3L203[1], 3L207[1]"
+    "Model": "MPQ03, MCM74, 3L203[1], 3L207[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad13,19": {
     "Generation": "iPad (10th generation)",
@@ -337,8 +328,8 @@
     "Internal Name": "J272AP",
     "Identifier": "iPad13,19",
     "Finish": "Silver",
-    "Storage": "64 GB",
-    "Model": "MQ6J3, MQ6X3, MCMJ4"
+    "Model": "MQ6J3, MQ6X3, MCMJ4",
+    "Connectivity": "Cellular"
   },
   "iPad15,7": {
     "Generation": "iPad (A16)",
@@ -348,8 +339,8 @@
     "Internal Name": "J481AP",
     "Identifier": "iPad15,7",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MD3Y4, 3N674[1], 3N789[1], 3N793[1]"
+    "Model": "MD3Y4, 3N674[1], 3N789[1], 3N793[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad15,8": {
     "Generation": "iPad (A16)",
@@ -359,8 +350,8 @@
     "Internal Name": "J482AP",
     "Identifier": "iPad15,8",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MD7F4, MD7U4, 3N797[1]"
+    "Model": "MD7F4, MD7U4, 3N797[1]",
+    "Connectivity": "Cellular"
   },
   "iPad Pro (12.9-inch),iPad Pro (12.9-inch) (2nd generation)": {
     "Generation": "Smart Keyboard",
@@ -386,8 +377,8 @@
     "Internal Name": "J71AP",
     "Identifier": "iPad4,1",
     "Finish": "Silver",
-    "Storage": "16 GB",
-    "Model": "MD788"
+    "Model": "MD788",
+    "Connectivity": "Wi-Fi"
   },
   "iPad4,2": {
     "Generation": "iPad Air",
@@ -397,8 +388,8 @@
     "Internal Name": "J72AP",
     "Identifier": "iPad4,2",
     "Finish": "Silver",
-    "Storage": "16 GB",
-    "Model": "MD794, ME997, ME999, MF021, MF502"
+    "Model": "MD794, ME997, ME999, MF021, MF502",
+    "Connectivity": "Cellular"
   },
   "iPad4,3": {
     "Generation": "iPad Air",
@@ -408,8 +399,8 @@
     "Internal Name": "J73AP",
     "Identifier": "iPad4,3",
     "Finish": "Silver",
-    "Storage": "16 GB",
-    "Model": "MF230"
+    "Model": "MF230",
+    "Connectivity": "Cellular"
   },
   "iPad5,3": {
     "Generation": "iPad Air 2",
@@ -419,8 +410,8 @@
     "Internal Name": "J81AP",
     "Identifier": "iPad5,3",
     "Finish": "Gold",
-    "Storage": "16 GB",
-    "Model": "MH0W2, 3A141[1]"
+    "Model": "MH0W2, 3A141[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad5,4": {
     "Generation": "iPad Air 2",
@@ -430,8 +421,8 @@
     "Internal Name": "J82AP",
     "Identifier": "iPad5,4",
     "Finish": "Gold",
-    "Storage": "16 GB",
-    "Model": "MH2W2, MH1C2"
+    "Model": "MH2W2, MH1C2",
+    "Connectivity": "Cellular"
   },
   "iPad11,3": {
     "Generation": "iPad Air (3rd generation)",
@@ -441,8 +432,8 @@
     "Internal Name": "J217AP",
     "Identifier": "iPad11,3",
     "Finish": "Gold",
-    "Storage": "64 GB",
-    "Model": "MUUL2"
+    "Model": "MUUL2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad11,4": {
     "Generation": "iPad Air (3rd generation)",
@@ -452,8 +443,8 @@
     "Internal Name": "J218AP",
     "Identifier": "iPad11,4",
     "Finish": "Gold",
-    "Storage": "64 GB",
-    "Model": "MV172, MV0F2"
+    "Model": "MV172, MV0F2",
+    "Connectivity": "Cellular"
   },
   "iPad13,1": {
     "Generation": "iPad Air (4th generation)",
@@ -463,8 +454,8 @@
     "Internal Name": "J307AP",
     "Identifier": "iPad13,1",
     "Finish": "Rose Gold",
-    "Storage": "64 GB",
-    "Model": "MYFP2"
+    "Model": "MYFP2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad13,2": {
     "Generation": "iPad Air (4th generation)",
@@ -474,8 +465,8 @@
     "Internal Name": "J308AP",
     "Identifier": "iPad13,2",
     "Finish": "Rose Gold",
-    "Storage": "64 GB",
-    "Model": "MYGY2, MYJ02"
+    "Model": "MYGY2, MYJ02",
+    "Connectivity": "Cellular"
   },
   "iPad13,16": {
     "Generation": "iPad Air (5th generation)",
@@ -485,8 +476,8 @@
     "Internal Name": "J407AP",
     "Identifier": "iPad13,16",
     "Finish": "Space Gray",
-    "Storage": "64 GB",
-    "Model": "MM9C3, 3M9C3[1]"
+    "Model": "MM9C3, 3M9C3[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad13,17": {
     "Generation": "iPad Air (5th generation)",
@@ -496,8 +487,8 @@
     "Internal Name": "J408AP",
     "Identifier": "iPad13,17",
     "Finish": "Space Gray",
-    "Storage": "64 GB",
-    "Model": "MM6R3, MM753"
+    "Model": "MM6R3, MM753",
+    "Connectivity": "Cellular"
   },
   "iPad14,8": {
     "Generation": "iPad Air 11-inch (M2)",
@@ -507,8 +498,8 @@
     "Internal Name": "J507AP",
     "Identifier": "iPad14,8",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MUWC3, 3M670[1], 3M694[1]"
+    "Model": "MUWC3, 3M670[1], 3M694[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad14,9": {
     "Generation": "iPad Air 11-inch (M2)",
@@ -518,8 +509,8 @@
     "Internal Name": "J508AP",
     "Identifier": "iPad14,9",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MUXD3"
+    "Model": "MUXD3",
+    "Connectivity": "Cellular"
   },
   "iPad14,10": {
     "Generation": "iPad Air 13-inch (M2)",
@@ -529,8 +520,8 @@
     "Internal Name": "J537AP",
     "Identifier": "iPad14,10",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MV273, 3M682[1], 3M686[1]"
+    "Model": "MV273, 3M682[1], 3M686[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad14,11": {
     "Generation": "iPad Air 13-inch (M2)",
@@ -540,8 +531,8 @@
     "Internal Name": "J538AP",
     "Identifier": "iPad14,11",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MV6Q3, 3M719[1]"
+    "Model": "MV6Q3, 3M719[1]",
+    "Connectivity": "Cellular"
   },
   "iPad15,3": {
     "Generation": "iPad Air 11-inch (M3)",
@@ -551,8 +542,8 @@
     "Internal Name": "J607AP",
     "Identifier": "iPad15,3",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MC9W4, 3N674[1]"
+    "Model": "MC9W4, 3N674[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad15,4": {
     "Generation": "iPad Air 11-inch (M3)",
@@ -562,8 +553,8 @@
     "Internal Name": "J608AP",
     "Identifier": "iPad15,4",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MCFV4, MCGD4, 3N686[1]"
+    "Model": "MCFV4, MCGD4, 3N686[1]",
+    "Connectivity": "Cellular"
   },
   "iPad15,5": {
     "Generation": "iPad Air 13-inch (M3)",
@@ -573,8 +564,8 @@
     "Internal Name": "J637AP",
     "Identifier": "iPad15,5",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MCNH4, 3N727[1], 3N731[1]"
+    "Model": "MCNH4, 3N727[1], 3N731[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad15,6": {
     "Generation": "iPad Air 13-inch (M3)",
@@ -584,8 +575,8 @@
     "Internal Name": "J638AP",
     "Identifier": "iPad15,6",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MCJ14, MCJJ4"
+    "Model": "MCJ14, MCJJ4",
+    "Connectivity": "Cellular"
   },
   "iPad16,8": {
     "Generation": "iPad Air 11-inch (M4)",
@@ -595,8 +586,8 @@
     "Internal Name": "J707AP",
     "Identifier": "iPad16,8",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MH304, 3P388[1]"
+    "Model": "MH304, 3P388[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad16,9": {
     "Generation": "iPad Air 11-inch (M4)",
@@ -606,8 +597,8 @@
     "Internal Name": "J708AP",
     "Identifier": "iPad16,9",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MH784, MH8A4, 3P422[1]"
+    "Model": "MH784, MH8A4, 3P422[1]",
+    "Connectivity": "Cellular"
   },
   "iPad16,10": {
     "Generation": "iPad Air 13-inch (M4)",
@@ -617,8 +608,8 @@
     "Internal Name": "J737AP",
     "Identifier": "iPad16,10",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MH5N4, 3P396[1]"
+    "Model": "MH5N4, 3P396[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad16,11": {
     "Generation": "iPad Air 13-inch (M4)",
@@ -628,8 +619,8 @@
     "Internal Name": "J738AP",
     "Identifier": "iPad16,11",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MH9D4, MH9W4, 3P430[1]"
+    "Model": "MH9D4, MH9W4, 3P430[1]",
+    "Connectivity": "Cellular"
   },
   "iPad6,7": {
     "Generation": "iPad Pro (12.9-inch)",
@@ -639,8 +630,8 @@
     "Internal Name": "J98aAP",
     "Identifier": "iPad6,7",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "ML0H2"
+    "Model": "ML0H2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad6,8": {
     "Generation": "iPad Pro (12.9-inch)",
@@ -650,8 +641,8 @@
     "Internal Name": "J99aAP",
     "Identifier": "iPad6,8",
     "Finish": "Gold",
-    "Storage": "128 GB",
-    "Model": "ML3Q2, ML2K2, ML3P2"
+    "Model": "ML3Q2, ML2K2, ML3P2",
+    "Connectivity": "Cellular"
   },
   "iPad6,3": {
     "Generation": "iPad Pro (9.7-inch)",
@@ -661,8 +652,8 @@
     "Internal Name": "J127AP",
     "Identifier": "iPad6,3",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "MLMQ2"
+    "Model": "MLMQ2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad6,4": {
     "Generation": "iPad Pro (9.7-inch)",
@@ -672,8 +663,8 @@
     "Internal Name": "J128AP",
     "Identifier": "iPad6,4",
     "Finish": "Gold",
-    "Storage": "32 GB",
-    "Model": "MLPY2"
+    "Model": "MLPY2",
+    "Connectivity": "Cellular"
   },
   "iPad7,1": {
     "Generation": "iPad Pro (12.9-inch) (2nd generation)",
@@ -683,8 +674,8 @@
     "Internal Name": "J120AP",
     "Identifier": "iPad7,1",
     "Finish": "Gold",
-    "Storage": "64 GB",
-    "Model": "MQDD2, 3D115[1]"
+    "Model": "MQDD2, 3D115[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad7,2": {
     "Generation": "iPad Pro (12.9-inch) (2nd generation)",
@@ -694,8 +685,8 @@
     "Internal Name": "J121AP",
     "Identifier": "iPad7,2",
     "Finish": "Gold",
-    "Storage": "64 GB",
-    "Model": "MQEF2"
+    "Model": "MQEF2",
+    "Connectivity": "Cellular"
   },
   "iPad7,3": {
     "Generation": "iPad Pro (10.5-inch)",
@@ -705,8 +696,8 @@
     "Internal Name": "J207AP",
     "Identifier": "iPad7,3",
     "Finish": "Gold",
-    "Storage": "64 GB",
-    "Model": "MQDX2, 3D118[1]"
+    "Model": "MQDX2, 3D118[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad7,4": {
     "Generation": "iPad Pro (10.5-inch)",
@@ -716,8 +707,8 @@
     "Internal Name": "J208AP",
     "Identifier": "iPad7,4",
     "Finish": "Gold",
-    "Storage": "64 GB",
-    "Model": "MQF12"
+    "Model": "MQF12",
+    "Connectivity": "Cellular"
   },
   "iPad8,1": {
     "Generation": "iPad Pro (11-inch)",
@@ -727,8 +718,9 @@
     "Internal Name": "J317AP",
     "Identifier": "iPad8,1",
     "Finish": "Silver",
-    "Storage": "64 GB",
-    "Model": "MTXP2, 3E149[1]"
+    "Storage": "< 1 TB",
+    "Model": "MTXP2, 3E149[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad8,2": {
     "Generation": "iPad Pro (11-inch)",
@@ -739,7 +731,8 @@
     "Identifier": "iPad8,2",
     "Finish": "Silver",
     "Storage": "1 TB",
-    "Model": "MTXW2"
+    "Model": "MTXW2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad8,3": {
     "Generation": "iPad Pro (11-inch)",
@@ -749,8 +742,9 @@
     "Internal Name": "J318AP",
     "Identifier": "iPad8,3",
     "Finish": "Silver",
-    "Storage": "64 GB",
-    "Model": "MU0Y2"
+    "Storage": "< 1 TB",
+    "Model": "MU0Y2",
+    "Connectivity": "Cellular"
   },
   "iPad8,4": {
     "Generation": "iPad Pro (11-inch)",
@@ -761,7 +755,8 @@
     "Identifier": "iPad8,4",
     "Finish": "Silver",
     "Storage": "1 TB",
-    "Model": "MU282"
+    "Model": "MU282",
+    "Connectivity": "Cellular"
   },
   "iPad8,5": {
     "Generation": "iPad Pro (12.9-inch) (3rd generation)",
@@ -771,8 +766,9 @@
     "Internal Name": "J320AP",
     "Identifier": "iPad8,5",
     "Finish": "Silver",
-    "Storage": "64 GB",
-    "Model": "MTEM2, 3D942[1]"
+    "Storage": "< 1 TB",
+    "Model": "MTEM2, 3D942[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad8,6": {
     "Generation": "iPad Pro (12.9-inch) (3rd generation)",
@@ -783,7 +779,8 @@
     "Identifier": "iPad8,6",
     "Finish": "Silver",
     "Storage": "1 TB",
-    "Model": "MTFT2"
+    "Model": "MTFT2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad8,7": {
     "Generation": "iPad Pro (12.9-inch) (3rd generation)",
@@ -793,8 +790,9 @@
     "Internal Name": "J321AP",
     "Identifier": "iPad8,7",
     "Finish": "Silver",
-    "Storage": "64 GB",
-    "Model": "MTHU2"
+    "Storage": "< 1 TB",
+    "Model": "MTHU2",
+    "Connectivity": "Cellular"
   },
   "iPad8,8": {
     "Generation": "iPad Pro (12.9-inch) (3rd generation)",
@@ -805,7 +803,8 @@
     "Identifier": "iPad8,8",
     "Finish": "Silver",
     "Storage": "1 TB",
-    "Model": "MTL02"
+    "Model": "MTL02",
+    "Connectivity": "Cellular"
   },
   "iPad8,9": {
     "Generation": "iPad Pro (11-inch) (2nd generation)",
@@ -815,8 +814,8 @@
     "Internal Name": "J417AP",
     "Identifier": "iPad8,9",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MY252, 3G932[1]"
+    "Model": "MY252, 3G932[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad8,10": {
     "Generation": "iPad Pro (11-inch) (2nd generation)",
@@ -826,8 +825,8 @@
     "Internal Name": "J418AP",
     "Identifier": "iPad8,10",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MY2W2, MY342, 3G936[1]"
+    "Model": "MY2W2, MY342, 3G936[1]",
+    "Connectivity": "Cellular"
   },
   "iPad8,11": {
     "Generation": "iPad Pro (12.9-inch) (4th generation)",
@@ -837,8 +836,8 @@
     "Internal Name": "J420AP",
     "Identifier": "iPad8,11",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MY2J2"
+    "Model": "MY2J2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad8,12": {
     "Generation": "iPad Pro (12.9-inch) (4th generation)",
@@ -848,8 +847,8 @@
     "Internal Name": "J421AP",
     "Identifier": "iPad8,12",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MY3D2, MY3K2"
+    "Model": "MY3D2, MY3K2",
+    "Connectivity": "Cellular"
   },
   "iPad13,4": {
     "Generation": "iPad Pro (11-inch) (3rd generation)",
@@ -859,8 +858,9 @@
     "Internal Name": "J517AP",
     "Identifier": "iPad13,4",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MHQT3, 3K873[1]"
+    "Storage": "128GB 256GB 512GB",
+    "Model": "MHQT3, 3K873[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad13,5": {
     "Generation": "iPad Pro (11-inch) (3rd generation)",
@@ -870,8 +870,9 @@
     "Internal Name": "J517xAP",
     "Identifier": "iPad13,5",
     "Finish": "Silver",
-    "Storage": "1 TB",
-    "Model": "MHR03"
+    "Storage": "1TB 2TB",
+    "Model": "MHR03",
+    "Connectivity": "Wi-Fi"
   },
   "iPad13,6": {
     "Generation": "iPad Pro (11-inch) (3rd generation)",
@@ -881,8 +882,9 @@
     "Internal Name": "J518AP",
     "Identifier": "iPad13,6",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MHMU3, MHW63, MHWH3, 3HW63[1]"
+    "Storage": "128GB 256GB 512GB",
+    "Model": "MHMU3, MHW63, MHWH3, 3HW63[1]",
+    "Connectivity": "Cellular"
   },
   "iPad13,7": {
     "Generation": "iPad Pro (11-inch) (3rd generation)",
@@ -892,8 +894,9 @@
     "Internal Name": "J518xAP",
     "Identifier": "iPad13,7",
     "Finish": "Silver",
-    "Storage": "1 TB",
-    "Model": "MHN13, MHWD3, MHWP3"
+    "Storage": "1TB 2TB",
+    "Model": "MHN13, MHWD3, MHWP3",
+    "Connectivity": "Cellular"
   },
   "iPad13,8": {
     "Generation": "iPad Pro (12.9-inch) (5th generation)",
@@ -903,8 +906,9 @@
     "Internal Name": "J522AP",
     "Identifier": "iPad13,8",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MHNG3"
+    "Storage": "128GB 256GB 512GB",
+    "Model": "MHNG3",
+    "Connectivity": "Wi-Fi"
   },
   "iPad13,9": {
     "Generation": "iPad Pro (12.9-inch) (5th generation)",
@@ -914,8 +918,9 @@
     "Internal Name": "J522xAP",
     "Identifier": "iPad13,9",
     "Finish": "Silver",
-    "Storage": "1 TB",
-    "Model": "MHNN3"
+    "Storage": "1TB 2TB",
+    "Model": "MHNN3",
+    "Connectivity": "Wi-Fi"
   },
   "iPad13,10": {
     "Generation": "iPad Pro (12.9-inch) (5th generation)",
@@ -925,8 +930,9 @@
     "Internal Name": "J523AP",
     "Identifier": "iPad13,10",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MHNT3, MHR53, MHRG3"
+    "Storage": "128GB 256GB 512GB",
+    "Model": "MHNT3, MHR53, MHRG3",
+    "Connectivity": "Cellular"
   },
   "iPad13,11": {
     "Generation": "iPad Pro (12.9-inch) (5th generation)",
@@ -936,8 +942,9 @@
     "Internal Name": "J523xAP",
     "Identifier": "iPad13,11",
     "Finish": "Silver",
-    "Storage": "1 TB",
-    "Model": "MHP23, MHRC3, MHRN3"
+    "Storage": "1TB 2TB",
+    "Model": "MHP23, MHRC3, MHRN3",
+    "Connectivity": "Cellular"
   },
   "iPad14,3": {
     "Generation": "iPad Pro (11-inch) (4th generation)",
@@ -947,8 +954,8 @@
     "Internal Name": "J617AP",
     "Identifier": "iPad14,3",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MNXE3, 3K873[1]"
+    "Model": "MNXE3, 3K873[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad14,4": {
     "Generation": "iPad Pro (11-inch) (4th generation)",
@@ -958,8 +965,8 @@
     "Internal Name": "J618AP",
     "Identifier": "iPad14,4",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MP563, MNYD3, MJQJ3, 3K909[1]"
+    "Model": "MP563, MNYD3, MJQJ3, 3K909[1]",
+    "Connectivity": "Cellular"
   },
   "iPad14,5": {
     "Generation": "iPad Pro (12.9-inch) (6th generation)",
@@ -969,8 +976,8 @@
     "Internal Name": "J620AP",
     "Identifier": "iPad14,5",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MNXQ3, 3K905[1]"
+    "Model": "MNXQ3, 3K905[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad14,6": {
     "Generation": "iPad Pro (12.9-inch) (6th generation)",
@@ -980,8 +987,8 @@
     "Internal Name": "J621AP",
     "Identifier": "iPad14,6",
     "Finish": "Silver",
-    "Storage": "128 GB",
-    "Model": "MP5Y3, MP1Y3, MP293"
+    "Model": "MP5Y3, MP1Y3, MP293",
+    "Connectivity": "Cellular"
   },
   "iPad16,3": {
     "Generation": "iPad Pro 11-inch (M4)",
@@ -991,8 +998,8 @@
     "Internal Name": "J717AP",
     "Identifier": "iPad16,3",
     "Finish": "Space Black",
-    "Storage": "256 GB",
-    "Model": "MVV83, 3M774[1]"
+    "Model": "MVV83, 3M774[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad16,4": {
     "Generation": "iPad Pro 11-inch (M4)",
@@ -1002,8 +1009,8 @@
     "Internal Name": "J718AP",
     "Identifier": "iPad16,4",
     "Finish": "Space Black",
-    "Storage": "256 GB",
-    "Model": "MVW13"
+    "Model": "MVW13",
+    "Connectivity": "Cellular"
   },
   "iPad16,5": {
     "Generation": "iPad Pro 13-inch (M4)",
@@ -1013,8 +1020,8 @@
     "Internal Name": "J720AP",
     "Identifier": "iPad16,5",
     "Finish": "Space Black",
-    "Storage": "256 GB",
-    "Model": "MVX23, 3M780[1], 3M782[1]"
+    "Model": "MVX23, 3M780[1], 3M782[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad16,6": {
     "Generation": "iPad Pro 13-inch (M4)",
@@ -1024,8 +1031,8 @@
     "Internal Name": "J721AP",
     "Identifier": "iPad16,6",
     "Finish": "Space Black",
-    "Storage": "256 GB",
-    "Model": "MVXR3, 3M786[1]"
+    "Model": "MVXR3, 3M786[1]",
+    "Connectivity": "Cellular"
   },
   "iPad17,1": {
     "Generation": "iPad Pro 11-inch (M5)",
@@ -1035,8 +1042,8 @@
     "Internal Name": "J817AP",
     "Identifier": "iPad17,1",
     "Finish": "Space Black",
-    "Storage": "256 GB",
-    "Model": "MDWK4, 3P001[1], 3P005[1]"
+    "Model": "MDWK4, 3P001[1], 3P005[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad17,2": {
     "Generation": "iPad Pro 11-inch (M5)",
@@ -1046,8 +1053,8 @@
     "Internal Name": "J818AP",
     "Identifier": "iPad17,2",
     "Finish": "Space Black",
-    "Storage": "256 GB",
-    "Model": "ME2N4, ME6E4, 3P026[1]"
+    "Model": "ME2N4, ME6E4, 3P026[1]",
+    "Connectivity": "Cellular"
   },
   "iPad17,3": {
     "Generation": "iPad Pro 13-inch (M5)",
@@ -1057,8 +1064,8 @@
     "Internal Name": "J820AP",
     "Identifier": "iPad17,3",
     "Finish": "Space Black",
-    "Storage": "256 GB",
-    "Model": "MDYJ4, 3P009[1], 3P013[1]"
+    "Model": "MDYJ4, 3P009[1], 3P013[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad17,4": {
     "Generation": "iPad Pro 13-inch (M5)",
@@ -1068,8 +1075,8 @@
     "Internal Name": "J821AP",
     "Identifier": "iPad17,4",
     "Finish": "Space Black",
-    "Storage": "256 GB",
-    "Model": "ME7W4, ME8Q4, 3P034[1]"
+    "Model": "ME7W4, ME8Q4, 3P034[1]",
+    "Connectivity": "Cellular"
   },
   "iPad2,5": {
     "Generation": "iPad mini",
@@ -1079,8 +1086,8 @@
     "Internal Name": "P105AP",
     "Identifier": "iPad2,5",
     "Finish": "Black & Slate",
-    "Storage": "16 GB",
-    "Model": "MD528, MF432"
+    "Model": "MD528, MF432",
+    "Connectivity": "Wi-Fi"
   },
   "iPad2,6": {
     "Generation": "iPad mini",
@@ -1090,8 +1097,8 @@
     "Internal Name": "P106AP",
     "Identifier": "iPad2,6",
     "Finish": "Black & Slate",
-    "Storage": "16 GB",
-    "Model": "MD534, ME030, MF442, MF743"
+    "Model": "MD534, ME030, MF442, MF743",
+    "Connectivity": "Cellular"
   },
   "iPad2,7": {
     "Generation": "iPad mini",
@@ -1101,8 +1108,8 @@
     "Internal Name": "P107AP",
     "Identifier": "iPad2,7",
     "Finish": "Black & Slate",
-    "Storage": "16 GB",
-    "Model": "MD540, ME215, MF450, MF453"
+    "Model": "MD540, ME215, MF450, MF453",
+    "Connectivity": "Cellular"
   },
   "iPad4,4": {
     "Generation": "iPad mini 2",
@@ -1112,8 +1119,8 @@
     "Internal Name": "J85AP",
     "Identifier": "iPad4,4",
     "Finish": "Silver",
-    "Storage": "16 GB",
-    "Model": "ME279"
+    "Model": "ME279",
+    "Connectivity": "Wi-Fi"
   },
   "iPad4,5": {
     "Generation": "iPad mini 2",
@@ -1123,8 +1130,8 @@
     "Internal Name": "J86AP",
     "Identifier": "iPad4,5",
     "Finish": "Silver",
-    "Storage": "16 GB",
-    "Model": "ME814, ME818, MF074, MF075, MF076, MF544"
+    "Model": "ME814, ME818, MF074, MF075, MF076, MF544",
+    "Connectivity": "Cellular"
   },
   "iPad4,6": {
     "Generation": "iPad mini 2",
@@ -1134,8 +1141,8 @@
     "Internal Name": "J87AP",
     "Identifier": "iPad4,6",
     "Finish": "Silver",
-    "Storage": "16 GB",
-    "Model": "MF248"
+    "Model": "MF248",
+    "Connectivity": "Cellular"
   },
   "iPad4,7": {
     "Generation": "iPad mini 3",
@@ -1145,8 +1152,8 @@
     "Internal Name": "J85mAP",
     "Identifier": "iPad4,7",
     "Finish": "Gold",
-    "Storage": "16 GB",
-    "Model": "MGYE2"
+    "Model": "MGYE2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad4,8": {
     "Generation": "iPad mini 3",
@@ -1156,8 +1163,8 @@
     "Internal Name": "J86mAP",
     "Identifier": "iPad4,8",
     "Finish": "Gold",
-    "Storage": "16 GB",
-    "Model": "MH3G2, MH0F2, 3A161[1]"
+    "Model": "MH3G2, MH0F2, 3A161[1]",
+    "Connectivity": "Cellular"
   },
   "iPad4,9": {
     "Generation": "iPad mini 3",
@@ -1167,8 +1174,8 @@
     "Internal Name": "J87mAP",
     "Identifier": "iPad4,9",
     "Finish": "Gold",
-    "Storage": "16 GB",
-    "Model": "MGYR2, MGYY2"
+    "Model": "MGYR2, MGYY2",
+    "Connectivity": "Cellular"
   },
   "iPad5,1": {
     "Generation": "iPad mini 4",
@@ -1178,8 +1185,8 @@
     "Internal Name": "J96AP",
     "Identifier": "iPad5,1",
     "Finish": "Gold",
-    "Storage": "16 GB",
-    "Model": "MK6L2, 3A335[1]"
+    "Model": "MK6L2, 3A335[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad5,2": {
     "Generation": "iPad mini 4",
@@ -1189,8 +1196,8 @@
     "Internal Name": "J97AP",
     "Identifier": "iPad5,2",
     "Finish": "Gold",
-    "Storage": "16 GB",
-    "Model": "MK882, MK712"
+    "Model": "MK882, MK712",
+    "Connectivity": "Cellular"
   },
   "iPad11,1": {
     "Generation": "iPad mini (5th generation)",
@@ -1200,8 +1207,8 @@
     "Internal Name": "J210AP",
     "Identifier": "iPad11,1",
     "Finish": "Gold",
-    "Storage": "64 GB",
-    "Model": "MUQY2"
+    "Model": "MUQY2",
+    "Connectivity": "Wi-Fi"
   },
   "iPad11,2": {
     "Generation": "iPad mini (5th generation)",
@@ -1211,8 +1218,8 @@
     "Internal Name": "J211AP",
     "Identifier": "iPad11,2",
     "Finish": "Gold",
-    "Storage": "64 GB",
-    "Model": "MUXH2, MUX72"
+    "Model": "MUXH2, MUX72",
+    "Connectivity": "Cellular"
   },
   "iPad14,1": {
     "Generation": "iPad mini (6th generation)",
@@ -1222,8 +1229,8 @@
     "Internal Name": "J310AP",
     "Identifier": "iPad14,1",
     "Finish": "Space Gray",
-    "Storage": "64 GB",
-    "Model": "MK7M3, 3J362[1]"
+    "Model": "MK7M3, 3J362[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad14,2": {
     "Generation": "iPad mini (6th generation)",
@@ -1233,8 +1240,8 @@
     "Internal Name": "J311AP",
     "Identifier": "iPad14,2",
     "Finish": "Space Gray",
-    "Storage": "64 GB",
-    "Model": "MK893"
+    "Model": "MK893",
+    "Connectivity": "Cellular"
   },
   "iPad16,1": {
     "Generation": "iPad mini (A17 Pro)",
@@ -1244,8 +1251,8 @@
     "Internal Name": "J410AP",
     "Identifier": "iPad16,1",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MXN63, 3N302[1], 3N306[1]"
+    "Model": "MXN63, 3N302[1], 3N306[1]",
+    "Connectivity": "Wi-Fi"
   },
   "iPad16,2": {
     "Generation": "iPad mini (A17 Pro)",
@@ -1255,8 +1262,8 @@
     "Internal Name": "J411AP",
     "Identifier": "iPad16,2",
     "Finish": "Space Gray",
-    "Storage": "128 GB",
-    "Model": "MXPN3, MXQ03, 3N317[1]"
+    "Model": "MXPN3, MXQ03, 3N317[1]",
+    "Connectivity": "Cellular"
   },
   "iPhone1,1": {
     "Generation": "iPhone",
@@ -1266,7 +1273,6 @@
     "Internal Name": "M68AP",
     "Identifier": "iPhone1,1",
     "Finish": "Black",
-    "Storage": "4 GB",
     "Model": "MA501, MB213[1], MB340[1], MB342[1], MB344[1]"
   },
   "iPhone1,2": {
@@ -1277,7 +1283,6 @@
     "Internal Name": "N82AP",
     "Identifier": "iPhone1,2",
     "Finish": "Black",
-    "Storage": "8 GB",
     "Model": "MB046, MB489, MB639, MB702, MC176, MB490, MB757, MB504"
   },
   "iPhone2,1": {
@@ -1288,7 +1293,6 @@
     "Internal Name": "N88AP",
     "Identifier": "iPhone2,1",
     "Finish": "Black",
-    "Storage": "8 GB",
     "Model": "MC555, MC640, MC637"
   },
   "iPhone3,1": {
@@ -1299,7 +1303,6 @@
     "Internal Name": "N90AP",
     "Identifier": "iPhone3,1",
     "Finish": "Black",
-    "Storage": "8 GB",
     "Model": "MD127"
   },
   "iPhone3,2": {
@@ -1310,7 +1313,6 @@
     "Internal Name": "N90bAP",
     "Identifier": "iPhone3,2",
     "Finish": "Black",
-    "Storage": "8 GB",
     "Model": "MD126, MD128, ME798"
   },
   "iPhone3,3": {
@@ -1321,7 +1323,6 @@
     "Internal Name": "N92AP",
     "Identifier": "iPhone3,3",
     "Finish": "Black",
-    "Storage": "8 GB",
     "Model": "MD146, MD439, MD873, ME639"
   },
   "iPhone4,1": {
@@ -1332,7 +1333,6 @@
     "Internal Name": "N94AP",
     "Identifier": "iPhone4,1",
     "Finish": "Black",
-    "Storage": "8 GB",
     "Model": "ME259, MF257, MF261, MF263, MF265, MF269, MF259, MF267"
   },
   "iPhone5,1": {
@@ -1343,7 +1343,6 @@
     "Internal Name": "N41AP",
     "Identifier": "iPhone5,1",
     "Finish": "Black & Slate",
-    "Storage": "16 GB",
     "Model": "MD293, MD634, MD638, ME486"
   },
   "iPhone5,2": {
@@ -1354,7 +1353,6 @@
     "Internal Name": "N42AP",
     "Identifier": "iPhone5,2",
     "Finish": "Black & Slate",
-    "Storage": "16 GB",
     "Model": "MD297, MD654, MD656, ME039, MD097, MD669, MD671"
   },
   "iPhone5,3": {
@@ -1365,7 +1363,6 @@
     "Internal Name": "N48AP",
     "Identifier": "iPhone5,3",
     "Finish": "Blue",
-    "Storage": "8 GB",
     "Model": "MGFP2, MG0T2, MGFJ2, MGF22, MG2G2"
   },
   "iPhone5,4": {
@@ -1376,7 +1373,6 @@
     "Internal Name": "N49AP",
     "Identifier": "iPhone5,4",
     "Finish": "Blue",
-    "Storage": "8 GB",
     "Model": "MG0T2, MG1U2, MG902, ME687[1], MG152"
   },
   "iPhone6,1": {
@@ -1387,7 +1383,6 @@
     "Internal Name": "N51AP",
     "Identifier": "iPhone6,1",
     "Finish": "Gold",
-    "Storage": "16 GB",
     "Model": "ME298, ME307, ME325, ME343, ME334, 3H429[1]"
   },
   "iPhone6,2": {
@@ -1398,7 +1393,6 @@
     "Internal Name": "N53AP",
     "Identifier": "iPhone6,2",
     "Finish": "Gold",
-    "Storage": "16 GB",
     "Model": "ME434, MF354, MF398, MF363, ME382[1], MF351[1]"
   },
   "iPhone7,2": {
@@ -1409,7 +1403,6 @@
     "Internal Name": "N61AP",
     "Identifier": "iPhone7,2",
     "Finish": "Gold",
-    "Storage": "16 GB",
     "Model": "MG3D2, MG492, MG4Q2, MG562, MG5Y2, MG6C2, 3A020[1]"
   },
   "iPhone7,1": {
@@ -1420,7 +1413,6 @@
     "Internal Name": "N56AP",
     "Identifier": "iPhone7,1",
     "Finish": "Gold",
-    "Storage": "16 GB",
     "Model": "MGAA2, MGAN2, MGC12, MGCM2, MGCX2, 3A065[1]"
   },
   "iPhone8,1": {
@@ -1431,7 +1423,6 @@
     "Internal Name": "N71APN71mAP",
     "Identifier": "iPhone8,1",
     "Finish": "Gold",
-    "Storage": "16 GB",
     "Model": "MKQL2, MKQ72, MKR12, MKRE2, MKRW2, MKT92, ML7E2, 3A574[1]"
   },
   "iPhone8,2": {
@@ -1442,7 +1433,6 @@
     "Internal Name": "N66APN66mAP",
     "Identifier": "iPhone8,2",
     "Finish": "Gold",
-    "Storage": "16 GB",
     "Model": "MKTN2, MKU32, MKUN2, MKV62, MKVQ2, MKW72, ML6D2, 3A550[1], 3A631[1]"
   },
   "iPhone8,4": {
@@ -1453,7 +1443,6 @@
     "Internal Name": "N69APN69uAP",
     "Identifier": "iPhone8,4",
     "Finish": "Gold",
-    "Storage": "16 GB",
     "Model": "MLXH2, MLXW2, MLY12, MLY52, MLY92, MLXM2, 3A850[1]"
   },
   "iPhone9,1": {
@@ -1464,7 +1453,6 @@
     "Internal Name": "D10AP",
     "Identifier": "iPhone9,1",
     "Finish": "Black",
-    "Storage": "32 GB",
     "Model": "MN8G2, MNAC2, MNAY2, MNCE2, MNGQ2"
   },
   "iPhone9,3": {
@@ -1475,7 +1463,6 @@
     "Internal Name": "D101AP",
     "Identifier": "iPhone9,3",
     "Finish": "Black",
-    "Storage": "32 GB",
     "Model": "MN9D2, MN9U2, MN8X2"
   },
   "iPhone9,2": {
@@ -1486,7 +1473,6 @@
     "Internal Name": "D11AP",
     "Identifier": "iPhone9,2",
     "Finish": "Black",
-    "Storage": "32 GB",
     "Model": "MNQH2, MNR12, MNR52, MNR92, MNRJ2, 3C372[1], 3C400[1]"
   },
   "iPhone9,4": {
@@ -1497,7 +1483,6 @@
     "Internal Name": "D111AP",
     "Identifier": "iPhone9,4",
     "Finish": "Black",
-    "Storage": "32 GB",
     "Model": "MNQR2, MNQW2, MNQM2"
   },
   "iPhone10,1": {
@@ -1508,7 +1493,6 @@
     "Internal Name": "D20AP",
     "Identifier": "iPhone10,1",
     "Finish": "Gold",
-    "Storage": "64 GB",
     "Model": "MQ6M2, MQ742, MQ772, MQ7A2"
   },
   "iPhone10,4": {
@@ -1519,7 +1503,6 @@
     "Internal Name": "D201AP",
     "Identifier": "iPhone10,4",
     "Finish": "Gold",
-    "Storage": "64 GB",
     "Model": "MQ6J2, MQ6X2, MQ712"
   },
   "iPhone10,2": {
@@ -1530,7 +1513,6 @@
     "Internal Name": "D21AP",
     "Identifier": "iPhone10,2",
     "Finish": "Gold",
-    "Storage": "64 GB",
     "Model": "MQ8F2, MQ9F2, MQ982, MQ9M2, 3D061[1], 3D097[1]"
   },
   "iPhone10,5": {
@@ -1541,7 +1523,6 @@
     "Internal Name": "D211AP",
     "Identifier": "iPhone10,5",
     "Finish": "Gold",
-    "Storage": "64 GB",
     "Model": "MQ8N2, MQ8V2, MQ922"
   },
   "iPhone10,3": {
@@ -1552,7 +1533,6 @@
     "Internal Name": "D22AP",
     "Identifier": "iPhone10,3",
     "Finish": "Silver",
-    "Storage": "64 GB",
     "Model": "MQCT2, MQCL2, MQAY2, MQA62, 3D063[1], 3D069[1], 3D090[1]"
   },
   "iPhone10,6": {
@@ -1563,7 +1543,6 @@
     "Internal Name": "D221AP",
     "Identifier": "iPhone10,6",
     "Finish": "Silver",
-    "Storage": "64 GB",
     "Model": "MQAK2, MQAR2, MQAD2"
   },
   "iPhone11,8": {
@@ -1574,7 +1553,6 @@
     "Internal Name": "N841AP",
     "Identifier": "iPhone11,8",
     "Finish": "Black",
-    "Storage": "64 GB",
     "Model": "MT3K2, MT2E2, MT302, MT472, 3D823[1]"
   },
   "iPhone11,2": {
@@ -1585,7 +1563,6 @@
     "Internal Name": "D321AP",
     "Identifier": "iPhone11,2",
     "Finish": "Gold",
-    "Storage": "64 GB",
     "Model": "MT8W2, MTA22, MT8L2, MTAJ2, MT962"
   },
   "iPhone11,6": {
@@ -1596,7 +1573,6 @@
     "Internal Name": "D331pAP",
     "Identifier": "iPhone11,6",
     "Finish": "Gold",
-    "Storage": "64 GB",
     "Model": "MT5X2, MT672, MT5M2, MT6H2, MT5C2, 3D897[1]"
   },
   "iPhone11,4": {
@@ -1607,7 +1583,6 @@
     "Internal Name": "D331AP",
     "Identifier": "iPhone11,4",
     "Finish": "Gold",
-    "Storage": "64 GB",
     "Model": "MT7D2"
   },
   "iPhone12,1": {
@@ -1618,7 +1593,6 @@
     "Internal Name": "N104AP",
     "Identifier": "iPhone12,1",
     "Finish": "Black",
-    "Storage": "64 GB",
     "Model": "MWHT2, MWK02, MWJE2, MWKM2, MWL72, MHCP3, 3F922[1], 3F946[1]"
   },
   "iPhone12,3": {
@@ -1629,7 +1603,6 @@
     "Internal Name": "D421AP",
     "Identifier": "iPhone12,3",
     "Finish": "Gold",
-    "Storage": "64 GB",
     "Model": "MW9E2, MWA82, MW9T2, MWAQ2, MWCK2"
   },
   "iPhone12,5": {
@@ -1640,7 +1613,6 @@
     "Internal Name": "D431AP",
     "Identifier": "iPhone12,5",
     "Finish": "Gold",
-    "Storage": "64 GB",
     "Model": "MWFC2, MWG42, MWFQ2, MWGH2, MWH12"
   },
   "iPhone12,8": {
@@ -1651,7 +1623,6 @@
     "Internal Name": "D79AP",
     "Identifier": "iPhone12,8",
     "Finish": "White",
-    "Storage": "64 GB",
     "Model": "MX9T2, MX9A2, MX9H2, MX9E2, MX9L2, MX9P2, MXAN2, MHGQ3"
   },
   "iPhone13,1": {
@@ -1662,7 +1633,6 @@
     "Internal Name": "D52gAP",
     "Identifier": "iPhone13,1",
     "Finish": "White",
-    "Storage": "64 GB",
     "Model": "MG803, MGDY3, MG613, MG7H3, MG713, MG6H3, MG8G3, MGA63"
   },
   "iPhone13,2": {
@@ -1673,7 +1643,6 @@
     "Internal Name": "D53gAP",
     "Identifier": "iPhone13,2",
     "Finish": "White",
-    "Storage": "64 GB",
     "Model": "MGGN3, MGJ63, MGEG3, MGG63, MGFM3, MGF53, MGH73, MGHP3, 3H516[1]"
   },
   "iPhone13,3": {
@@ -1684,7 +1653,6 @@
     "Internal Name": "D53pAP",
     "Identifier": "iPhone13,3",
     "Finish": "Silver",
-    "Storage": "128 GB",
     "Model": "MGLA3, MGML3, MGJN3, MGKW3, MGKH3, MGK23, MGLP3, MGM63, 3H529[1], 3H546[1]"
   },
   "iPhone13,4": {
@@ -1695,7 +1663,6 @@
     "Internal Name": "D54pAP",
     "Identifier": "iPhone13,4",
     "Finish": "Silver",
-    "Storage": "128 GB",
     "Model": "MGC13, MGD83, MG8Y3, MGA93, MG9Q3, MG9C3, MGCG3, MGCV3"
   },
   "iPhone14,4": {
@@ -1706,7 +1673,6 @@
     "Internal Name": "D16AP",
     "Identifier": "iPhone14,4",
     "Finish": "PRODUCT(RED)",
-    "Storage": "128 GB",
     "Model": "MLK33, MLHQ3, MLDF3, MLJG3, 3J748[1]"
   },
   "iPhone14,5": {
@@ -1717,7 +1683,6 @@
     "Internal Name": "D17AP",
     "Identifier": "iPhone14,5",
     "Finish": "PRODUCT(RED)",
-    "Storage": "128 GB",
     "Model": "MLPJ3, MLMQ3, MLDX3, MLNF3"
   },
   "iPhone14,2": {
@@ -1728,7 +1693,6 @@
     "Internal Name": "D63AP",
     "Identifier": "iPhone14,2",
     "Finish": "Graphite",
-    "Storage": "128 GB",
     "Model": "MLV93, MLTP3, MLT53, 3J854[1]"
   },
   "iPhone14,3": {
@@ -1739,7 +1703,6 @@
     "Internal Name": "D64AP",
     "Identifier": "iPhone14,3",
     "Finish": "Graphite",
-    "Storage": "128 GB",
     "Model": "MLL63, MLKL3, MLH43, 3J782[1]"
   },
   "iPhone14,6": {
@@ -1750,7 +1713,6 @@
     "Internal Name": "D49AP",
     "Identifier": "iPhone14,6",
     "Finish": "Midnight",
-    "Storage": "64 GB",
     "Model": "MMX53, MMWV3, MMXF3, MMYC3, MNA93, 3D423[1], 3K417[1], 3K420[1], 3K423[1], 3K429[1]"
   },
   "iPhone14,7": {
@@ -1761,7 +1723,6 @@
     "Internal Name": "D27AP",
     "Identifier": "iPhone14,7",
     "Finish": "Blue",
-    "Storage": "128 GB",
     "Model": "MPVN3, MPVH3, MPVG3, MPVJ3, 3L235[1], 3L236[1], 3L237[1], 3L238[1]"
   },
   "iPhone14,8": {
@@ -1772,7 +1733,6 @@
     "Internal Name": "D28AP",
     "Identifier": "iPhone14,8",
     "Finish": "Blue",
-    "Storage": "128 GB",
     "Model": "MQ523, MQ3W3, MQ3A3, MQ4H3, 3L269[1], 3L274[1], 3L279[1], 3L284[1]"
   },
   "iPhone15,2": {
@@ -1783,7 +1743,6 @@
     "Internal Name": "D73AP",
     "Identifier": "iPhone15,2",
     "Finish": "Deep Purple",
-    "Storage": "128 GB",
     "Model": "MQ0E3, MQ0G3, MQ0D3, MQ0F3"
   },
   "iPhone15,3": {
@@ -1794,7 +1753,6 @@
     "Internal Name": "D74AP",
     "Identifier": "iPhone15,3",
     "Finish": "Deep Purple",
-    "Storage": "128 GB",
     "Model": "MQ9T3, MQ8R3, MQ863, MQ993, 3L306[1], 3L310[1], 3L314[1], 3L318[1]"
   },
   "iPhone15,4": {
@@ -1805,7 +1763,6 @@
     "Internal Name": "D37AP",
     "Identifier": "iPhone15,4",
     "Finish": "Blue",
-    "Storage": "128 GB",
     "Model": "MTP43, MTML3, MTLG3, MTLY3, 3M410[1], 3M415[1], 3M420[1], 3M425[1], 3M709[1]"
   },
   "iPhone15,5": {
@@ -1816,7 +1773,6 @@
     "Internal Name": "D38AP",
     "Identifier": "iPhone15,5",
     "Finish": "Blue",
-    "Storage": "128 GB",
     "Model": "MU163, MU0D3, MTXD3, MTXV3, 3M447[1], 3M450[1], 3M455[1], 3M460[1], 3M465[1]"
   },
   "iPhone16,1": {
@@ -1827,7 +1783,6 @@
     "Internal Name": "D83AP",
     "Identifier": "iPhone16,1",
     "Finish": "Natural Titanium",
-    "Storage": "128 GB",
     "Model": "MTUX3, MTU93, MTQ63, MTQP3, 3M438[1], 3M442[1]"
   },
   "iPhone16,2": {
@@ -1838,7 +1793,6 @@
     "Internal Name": "D84AP",
     "Identifier": "iPhone16,2",
     "Finish": "Natural Titanium",
-    "Storage": "256 GB",
     "Model": "MU793, MU6R3, MU2Q3, MU683, 3M374[1], 3M742[1]"
   },
   "iPhone17,3": {
@@ -1849,7 +1803,6 @@
     "Internal Name": "D47AP",
     "Identifier": "iPhone17,3",
     "Finish": "Ultramarine",
-    "Storage": "128 GB",
     "Model": "MYEC3, MYAT3, MYDU3, MYEY3, 3N384[1], 3N389[1], 3N394[1], 3N399[1], 3N404[1]"
   },
   "iPhone17,4": {
@@ -1860,7 +1813,6 @@
     "Internal Name": "D48AP",
     "Identifier": "iPhone17,4",
     "Finish": "Ultramarine",
-    "Storage": "128 GB",
     "Model": "MXVX3, MXUW3, MXVE3, MXUD3, 3N336[1], 3N341[1], 3N346[1], 3N351[1]"
   },
   "iPhone17,1": {
@@ -1871,7 +1823,6 @@
     "Internal Name": "D93AP",
     "Identifier": "iPhone17,1",
     "Finish": "Desert Titanium",
-    "Storage": "128 GB",
     "Model": "MYNF3, MYMC3, MYMX3, MYLQ3, 3N349[1]"
   },
   "iPhone17,2": {
@@ -1882,7 +1833,6 @@
     "Internal Name": "D94AP",
     "Identifier": "iPhone17,2",
     "Finish": "Desert Titanium",
-    "Storage": "256 GB",
     "Model": "MYWX3, MYW53, MYWJ3, MYTP3, 3N522[1], 3N526[1], 3N530[1], 3N534[1], 3N538[1]"
   },
   "iPhone17,5": {
@@ -1893,7 +1843,6 @@
     "Internal Name": "V59AP",
     "Identifier": "iPhone17,5",
     "Finish": "White",
-    "Storage": "128 GB",
     "Model": "MD0E4, MD1R4, MD1G4, MD2C4, 3N363[1], 3N757[1], 3N759[1], 3N761[1], 3N763[1], 3N765[1]"
   },
   "iPhone18,4": {
@@ -1904,7 +1853,6 @@
     "Internal Name": "D23AP",
     "Identifier": "iPhone18,4",
     "Finish": "Sky Blue",
-    "Storage": "256 GB",
     "Model": "MG2P4, MG1D4, MG364, 3P140[1], 3P148[1], 3P156[1]"
   },
   "iPhone18,3": {
@@ -1915,7 +1863,6 @@
     "Internal Name": "V57AP",
     "Identifier": "iPhone18,3",
     "Finish": "Lavender",
-    "Storage": "256 GB",
     "Model": "MG6M4, MG494, MG6A4, MG704, 3P182[1], 3P187[1], 3P197[1], 3P202[1]"
   },
   "iPhone18,1": {
@@ -1926,7 +1873,6 @@
     "Internal Name": "V53AP",
     "Identifier": "iPhone18,1",
     "Finish": "Silver",
-    "Storage": "256 GB",
     "Model": "MG8G4, MG7K4, MG854, MG8T4, 3P161[1], 3P170[1], 3P173[1]"
   },
   "iPhone18,2": {
@@ -1937,7 +1883,6 @@
     "Internal Name": "V54AP",
     "Identifier": "iPhone18,2",
     "Finish": "Silver",
-    "Storage": "256 GB",
     "Model": "MFYM4, MFXG4, MFY84, MG034, 3P119[1], 3P128[1], 3P131[1]"
   },
   "iPhone18,5": {
@@ -1948,7 +1893,6 @@
     "Internal Name": "V159AP",
     "Identifier": "iPhone18,5",
     "Finish": "White",
-    "Storage": "256 GB",
     "Model": "MHRP4, MHRW4, MHU54, 3P665[1]"
   },
   "iPod1,1": {
@@ -1959,7 +1903,6 @@
     "Internal Name": "N45AP",
     "Identifier": "iPod1,1",
     "Color": "Black",
-    "Storage": "8 GB",
     "Model": "MA623, MA624, MA839"
   },
   "iPod2,1": {
@@ -1970,7 +1913,6 @@
     "Internal Name": "N72AP",
     "Identifier": "iPod2,1",
     "Color": "Black",
-    "Storage": "8 GB",
     "Model": "MB525, MB528, MB529"
   },
   "iPod3,1": {
@@ -1981,7 +1923,6 @@
     "Internal Name": "N18AP",
     "Identifier": "iPod3,1",
     "Color": "Black",
-    "Storage": "32 GB",
     "Model": "MC008"
   },
   "iPod4,1": {
@@ -1992,7 +1933,6 @@
     "Internal Name": "N81AP",
     "Identifier": "iPod4,1",
     "Color": "Black",
-    "Storage": "8 GB",
     "Model": "MC540"
   },
   "iPod5,1": {
@@ -2003,7 +1943,6 @@
     "Internal Name": "N78AP",
     "Identifier": "iPod5,1",
     "Color": "Black & Slate",
-    "Storage": "32 GB",
     "Model": "MD723"
   },
   "iPod7,1": {
@@ -2014,7 +1953,6 @@
     "Internal Name": "N102AP",
     "Identifier": "iPod7,1",
     "Color": "Blue",
-    "Storage": "16 GB",
     "Model": "MKH22, 3A650[2]"
   },
   "iPod9,1": {
@@ -2025,7 +1963,6 @@
     "Internal Name": "N112AP",
     "Identifier": "iPod9,1",
     "Color": "Blue",
-    "Storage": "32 GB",
     "Model": "MVHU2"
   }
 }

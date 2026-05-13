@@ -12,6 +12,8 @@ struct DeviceInfo: Codable {
     let Storage: String?
     let Model: String?
     let First_iPad_Compatibility: String?
+    /// 网络类型等（如 Wi-Fi / Cellular）；来自 `apple_device_models.json` 时可选
+    let Connectivity: String?
 
     enum CodingKeys: String, CodingKey {
         case Generation
@@ -25,6 +27,38 @@ struct DeviceInfo: Codable {
         case Storage
         case Model
         case First_iPad_Compatibility = "First iPad Compatibility"
+        case Connectivity
+    }
+}
+
+extension DeviceInfo {
+    /// 若本条目某字段为空，则用 Bundle 快照中对应字段补全（Python 临时 JSON 可能缺 Connectivity 等）
+    private static func preferNonEmpty(_ primary: String?, _ fallback: String?) -> String? {
+        let p = (primary ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        if !p.isEmpty { return p }
+        let f = (fallback ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        return f.isEmpty ? nil : f
+    }
+
+    func mergingBundledSupplementals(from bundled: DeviceInfo?) -> DeviceInfo {
+        guard let b = bundled else { return self }
+        let conn = Self.preferNonEmpty(Connectivity, b.Connectivity)
+        // Storage：仅采用 Bundle 内由维基词条页 Identifiers 表 enrich 写入的值，绝不回退到 Python/Models 临时数据
+        let stor = Self.preferNonEmpty(b.Storage, nil)
+        return DeviceInfo(
+            Generation: Generation,
+            A_Number: A_Number,
+            Bootrom: Bootrom,
+            FCC_ID: FCC_ID,
+            Internal_Name: Internal_Name,
+            Identifier: Identifier,
+            Color: Color,
+            Finish: Finish,
+            Storage: stor,
+            Model: Model,
+            First_iPad_Compatibility: First_iPad_Compatibility,
+            Connectivity: conn
+        )
     }
 }
 
@@ -35,6 +69,28 @@ class DeviceDataManager {
     private(set) var sortedIdentifiers: [String] = []
 
     private init() {}
+
+    /// 从 App Bundle 内的 `apple_device_models.json` 合并字段：Connectivity 可补全 Python 临时 JSON；
+    /// Storage 仅使用 Bundle 中维基 enrich 结果（无则清空，不回退 Models 表）。
+    private func mergeBundledSupplementalFieldsFromSnapshot() {
+        guard let url = Bundle.main.url(forResource: "apple_device_models", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let bundled = try? JSONDecoder().decode([String: DeviceInfo].self, from: data)
+        else {
+            print("[DeviceDataManager] mergeBundledSupplementals: 无法读取 Bundle 内 apple_device_models.json，跳过合并")
+            return
+        }
+        var next = devices
+        for (id, info) in devices {
+            if let b = bundled[id] {
+                next[id] = info.mergingBundledSupplementals(from: b)
+            }
+        }
+        devices = next
+        let nConn = next.values.filter { ($0.Connectivity ?? "").isEmpty == false }.count
+        let nStor = next.values.filter { ($0.Storage ?? "").isEmpty == false }.count
+        print("[DeviceDataManager] mergeBundledSupplementals: Connectivity 非空 \(nConn) 条，Storage 非空 \(nStor) 条")
+    }
     
     // 自然排序比较函数
     private func naturalCompare(_ a: String, _ b: String) -> ComparisonResult {
@@ -118,11 +174,12 @@ class DeviceDataManager {
                     if FileManager.default.fileExists(atPath: tempOutputPath) {
                         let data = try Data(contentsOf: URL(fileURLWithPath: tempOutputPath))
                         devices = try JSONDecoder().decode([String: DeviceInfo].self, from: data)
+                        mergeBundledSupplementalFieldsFromSnapshot()
                         sortedIdentifiers = devices.keys.sorted { naturalCompare($0, $1) == .orderedAscending }
                         print("[DeviceDataManager] ✅ Successfully loaded \(devices.count) devices from Python script")
-                    print("[DeviceDataManager] First 3 identifiers: \(sortedIdentifiers.prefix(3))")
-                    NotificationCenter.default.post(name: NSNotification.Name("DeviceDataLoaded"), object: nil)
-                    return
+                        print("[DeviceDataManager] First 3 identifiers: \(sortedIdentifiers.prefix(3))")
+                        NotificationCenter.default.post(name: NSNotification.Name("DeviceDataLoaded"), object: nil)
+                        return
                     }
                 } else {
                     let errorData = errorPipe.fileHandleForReading.readDataToEndOfFile()
