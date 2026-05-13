@@ -467,7 +467,13 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         // 创建进程
         let process = Process()
         process.executableURL = URL(fileURLWithPath: "/usr/bin/python3")
-        process.arguments = [pythonScriptPath, folderPath, identifiersJson, generationsJson]
+        process.arguments = [
+            pythonScriptPath,
+            folderPath,
+            identifiersJson,
+            generationsJson,
+            "--no-models-fetch",
+        ]
         
         // 创建管道获取输出
         let outputPipe = Pipe()
@@ -526,6 +532,9 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         let identifiersNotOnWiki = result["identifiers_not_on_models_page"] as? [String] ?? []
 
         let wikiStatusLine: String = {
+            if result["models_fetch_skipped"] as? Bool == true {
+                return "已跳过在线 Models；仅扫描所选文件夹中的源码是否包含 Identifier / Generation。\n\n"
+            }
             if !modelsFetchOk {
                 return "提示：在线 Models 页面未成功拉取或解析（\(modelsFetchError)）。下方对比仍使用应用内设备列表；请确认已安装 Playwright/Chromium，必要时在弹出浏览器中完成验证。\n\n"
             }

@@ -2,12 +2,11 @@
 """
 对比工程目录中的 .h / .m / .swift 是否包含给定设备 Identifier 与 Generation 字符串。
 
-与旧版 check_device_info.py 的 CLI 与 JSON 输出格式兼容；区别为本脚本会先用 Playwright
-打开 https://theapplewiki.com/wiki/Models 拉取在线页面（不读本地 Models HTML / JSON），
-解析维基表格用于校验与统计；若 `scripts/theapplewiki_pages`（或环境变量
-PHONEEXITCHECK_WIKI_PAGES_DIR）下存在抓取到的词条 HTML，则从 **Identifiers** 段常见
-wikitable（含 ProductType、Connectivity、**Storage** 列）中解析与 Identifier 同行的
-**Connectivity / Storage**，并写入输出的 device_models。
+与旧版 check_device_info.py 的 CLI 与 JSON 输出格式兼容。默认会用 Playwright 打开
+https://theapplewiki.com/wiki/Models 拉取在线页面并解析表格用于校验与统计。
+传入 **`--no-models-fetch`** 时**不**拉取在线 Models，仅做工程目录字符串扫描，并仍可读
+`scripts/theapplewiki_pages`（或环境变量 PHONEEXITCHECK_WIKI_PAGES_DIR）下的词条 HTML，
+从 **Identifiers** 段 wikitable 解析 **Connectivity / Storage** 写入输出的 device_models。
 
 依赖：pip install playwright beautifulsoup4 && playwright install chromium
 
@@ -408,63 +407,83 @@ def find_files_with_device_info(folder_path, identifiers, generations):
 
 
 def main() -> None:
-    if len(sys.argv) < 4:
+    raw_args = sys.argv[1:]
+    no_models_fetch = "--no-models-fetch" in raw_args
+    pos_args = [a for a in raw_args if a != "--no-models-fetch"]
+
+    if len(pos_args) < 3:
         print(
             "Usage: python3 check_device_info_browser.py "
-            "<folder_path> <identifiers_json> <generations_json>",
+            "<folder_path> <identifiers_json> <generations_json> [--no-models-fetch]",
             file=sys.stderr,
         )
         sys.exit(1)
 
-    folder_path = sys.argv[1]
-    identifiers = json.loads(sys.argv[2])
-    generations = json.loads(sys.argv[3])
+    folder_path = pos_args[0]
+    identifiers = json.loads(pos_args[1])
+    generations = json.loads(pos_args[2])
 
     headless = os.environ.get("PHONEEXITCHECK_HEADLESS", "").strip() in ("1", "true", "yes")
     custom_profile = os.environ.get("PHONEEXITCHECK_PLAYWRIGHT_USER_DATA")
     user_data_dir = Path(custom_profile).expanduser() if custom_profile else None
 
-    print("[check_device_info_browser] 正在拉取 Models 页面…", file=sys.stderr)
-    html, fetch_err = fetch_models_html(
-        user_data_dir=user_data_dir, headless=headless
-    )
-
+    fetch_err: str | None = None
     device_map: dict[str, dict] = {}
-    if html:
-        print("[check_device_info_browser] 正在解析维基表格…", file=sys.stderr)
-        try:
-            device_map = parse_models_device_map(html)
-        except Exception as ex:
-            fetch_err = f"解析 Models 表格失败: {ex}"
-            device_map = {}
 
-    if html and not device_map and fetch_err is None:
-        fetch_err = "未能从 Models 页解析到任何设备行（表格结构可能已变更）。"
+    if no_models_fetch:
+        print(
+            "[check_device_info_browser] 已跳过在线 Models 拉取（--no-models-fetch）。",
+            file=sys.stderr,
+        )
+    else:
+        print("[check_device_info_browser] 正在拉取 Models 页面…", file=sys.stderr)
+        html, fetch_err = fetch_models_html(
+            user_data_dir=user_data_dir, headless=headless
+        )
+
+        if html:
+            print("[check_device_info_browser] 正在解析维基表格…", file=sys.stderr)
+            try:
+                device_map = parse_models_device_map(html)
+            except Exception as ex:
+                fetch_err = f"解析 Models 表格失败: {ex}"
+                device_map = {}
+
+        if html and not device_map and fetch_err is None:
+            fetch_err = "未能从 Models 页解析到任何设备行（表格结构可能已变更）。"
 
     result = find_files_with_device_info(folder_path, identifiers, generations)
 
-    result["models_fetch_ok"] = fetch_err is None and bool(device_map)
-    result["models_fetch_error"] = fetch_err
-    result["models_page_device_count"] = len(device_map)
-    result["identifiers_not_on_models_page"] = [
-        i for i in identifiers if i and i not in device_map
-    ]
+    result["models_fetch_skipped"] = no_models_fetch
+    if no_models_fetch:
+        result["models_fetch_ok"] = True
+        result["models_fetch_error"] = ""
+        result["models_page_device_count"] = 0
+        result["identifiers_not_on_models_page"] = []
+        result["generation_mismatches_vs_wiki"] = []
+    else:
+        result["models_fetch_ok"] = fetch_err is None and bool(device_map)
+        result["models_fetch_error"] = fetch_err or ""
+        result["models_page_device_count"] = len(device_map)
+        result["identifiers_not_on_models_page"] = [
+            i for i in identifiers if i and i not in device_map
+        ]
 
-    # 可选：若维基行存在 Generation，标出 App 传入的 Generation 与维基不一致（仅诊断）
-    generation_mismatches = []
-    for i, gid in enumerate(identifiers):
-        if i >= len(generations):
-            break
-        g = generations[i]
-        row = device_map.get(gid) if device_map else None
-        if not row or not g:
-            continue
-        wiki_g = row.get("Generation")
-        if wiki_g and wiki_g != g:
-            generation_mismatches.append(
-                {"identifier": gid, "app_generation": g, "wiki_generation": wiki_g}
-            )
-    result["generation_mismatches_vs_wiki"] = generation_mismatches
+        # 可选：若维基行存在 Generation，标出 App 传入的 Generation 与维基不一致（仅诊断）
+        generation_mismatches = []
+        for i, gid in enumerate(identifiers):
+            if i >= len(generations):
+                break
+            g = generations[i]
+            row = device_map.get(gid) if device_map else None
+            if not row or not g:
+                continue
+            wiki_g = row.get("Generation")
+            if wiki_g and wiki_g != g:
+                generation_mismatches.append(
+                    {"identifier": gid, "app_generation": g, "wiki_generation": wiki_g}
+                )
+        result["generation_mismatches_vs_wiki"] = generation_mismatches
 
     pages_dir = _wiki_pages_dir()
     device_models, conn_by_id, stor_by_id, id_notes = build_device_models_with_connectivity(
